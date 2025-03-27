@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('buttons/back.jpg') no-repeat center center fixed; /* 背景画像を設定 */
+    background-size: cover; /* 画面いっぱいに調整 */
+}
+
+#username-screen,
+#quiz-screen {
+    margin-top: 50px;
+}
+
+#correct-count {
+    font-family: vdl-v7gothic, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 20px;
+
+    color: #fbff00;
+    text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+                -1px 1px 0 #000000, 1px -1px 0 #000000,
+                0px 1px 0 #000000,  0-1px 0 #000000,
+                -1px 0 0 #000000, 1px 0 0 #000000;
+}
+
+.correct_counter {
+    font-size: 20px;
+    color: #fbff00;
+    padding: 0px 10px;
+    display: flex; /* フレックスボックスで配置 */
+    align-items: center; /* アイコンとテキストの高さを揃える */
+    justify-content: center; /* 水平方向に中央揃え */
+    gap: 5px; /* アイコンとテキストの間に余白を追加 */
+    margin: 0 auto; /* コンテナ内で中央揃え */
+    width: fit-content; /* コンテンツの長さに合わせる */
+}
+
+.correct_counter img {
+    width: 150px;
+    height: auto;
+}
+
+#total-time {
+    font-family: vdl-v7gothic, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 20px;
+
+    color: #fbff00;
+    text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+                -1px 1px 0 #000000, 1px -1px 0 #000000,
+                0px 1px 0 #000000,  0-1px 0 #000000,
+                -1px 0 0 #000000, 1px 0 0 #000000;
+}
+
+.quiz-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 2px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.answer-btn {
+    width: 150px;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    background: none;
+}
+
+.answer-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.ex-container{
+    width: 100%;
+    height: 100%;
+}
+
+.ex-container img{
+    width: 350px;
+    height: auto;
+}
+
+.answer-btn.enabled {
+    opacity: 1;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+}
